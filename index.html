@@ -5,7 +5,7 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       height: 100vh;
       overflow: hidden;
       color: white;
@@ -22,11 +22,11 @@
     }
 
     #main {
-      background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9');
+      background-image: url('main.jpg');
     }
 
     #afterYes {
-      background-image: url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e');
+      background-image: url('yes.jpg');
       display: none;
       flex-direction: column;
       padding: 20px;
@@ -39,7 +39,7 @@
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 2.4em;
       margin-bottom: 25px;
     }
 
@@ -84,7 +84,6 @@
 
 <body>
 
-<!-- Background Music -->
 <audio id="music" loop>
   <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
 </audio>
@@ -130,7 +129,6 @@ function startHearts() {
     heart.innerHTML = "💖";
     heart.style.left = Math.random() * 100 + "vw";
     document.body.appendChild(heart);
-
     setTimeout(() => heart.remove(), 6000);
   }, 300);
 }
